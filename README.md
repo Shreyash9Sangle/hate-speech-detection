@@ -18,8 +18,11 @@ This project implements a machine learning-based text classifier to detect hate 
 ## Project Structure
 
 ├── HSD.py # Main script for model training and prediction
+
 ├── HSD_dataset.csv # Dataset containing tweet data
+
 ├── requirements.txt # Python dependencies
+
 └── README.md # Project documentation
 
 ## Requirements
@@ -32,20 +35,21 @@ This project implements a machine learning-based text classifier to detect hate 
 
 Install the necessary dependencies:
 
-pip install -r requirements.txt
+``` pip install -r requirements.txt ```
 
 ## How to Run
 
 1. Clone the repository:
 
-git clone https://github.com/Shreyash9Sangle/hate-speech-detection.git
-cd hate-speech-detection
+```git clone https://github.com/Shreyash9Sangle/hate-speech-detection.git```
+
+```cd hate-speech-detection```
 
 2. Run the Streamlit app:
 
-streamlit run HSD.py
+```streamlit run HSD.py```
 
-3.Open the provided local URL in your browser to interact with the application.
+3. Open the provided local URL in your browser to interact with the application.
 
 ## Author
 Shreyash Sangle
