@@ -1,41 +1,51 @@
-HATE SPEECH DETECTION 🚨
+# Hate Speech Detection using Machine Learning
 
-This project is a Hate Speech Detection system built using Python, NLTK, and Scikit-learn. It classifies tweets into three categories:
+## Overview
 
-Hate Speech
+This project implements a machine learning-based text classifier to detect hate speech in tweets. Utilizing Natural Language Processing (NLP) techniques and models like Decision Tree Classifier, it classifies tweets into three categories:
 
-Offensive Language
+- **Hate Speech**
+- **Offensive Language**
+- **Neither**
 
-No Hate and Offensive
+## Features
 
-A Decision Tree Classifier is used as the machine learning model, and a Streamlit app is provided for easy user interaction.
+- **Data Preprocessing**: Cleans and prepares tweet data by removing links, punctuation, numbers, stopwords, and applying stemming.
+- **Text Vectorization**: Converts text into numerical vectors using CountVectorizer.
+- **Model Training**: Trains a Decision Tree Classifier on the processed data.
+- **User Interface**: Provides a Streamlit app for easy user interaction.
 
-📌 FEATURES
+## Project Structure
 
-Preprocesses tweets (removes links, punctuation, numbers, stopwords, and applies stemming).
+├── HSD.py # Main script for model training and prediction
+├── HSD_dataset.csv # Dataset containing tweet data
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
 
-Converts text into numerical vectors using CountVectorizer.
+## Requirements
 
-Classifies tweets into 3 categories.
+- Python 3.x
+- NLTK
+- scikit-learn
+- pandas
+- streamlit
 
-Interactive Streamlit web app with real-time predictions.
+Install the necessary dependencies:
 
-Displays model accuracy on test data.
+pip install -r requirements.txt
 
-🛠️ TECH STACK
+## How to Run
 
-Python
+1. Clone the repository:
 
-Pandas, NumPy – Data handling
+git clone https://github.com/Shreyash9Sangle/hate-speech-detection.git
+cd hate-speech-detection
 
-NLTK – Text preprocessing (stemming, stopwords removal)
+2. Run the Streamlit app:
 
-Scikit-learn – ML model (Decision Tree Classifier, train-test split)
+streamlit run HSD.py
 
-Streamlit – Web interface
+3.Open the provided local URL in your browser to interact with the application.
 
-
-PROJECT STRUCTURE
-├── HSD.py              # Main project file with model & Streamlit app
-├── HSD_dataset.csv     # Dataset used for training & testing
-└── README.md           # Project documentation
+## Author
+Shreyash Sangle
